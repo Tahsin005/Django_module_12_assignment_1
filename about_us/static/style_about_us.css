@@ -1,0 +1,7 @@
+#text_content{
+    /* background-color: rgb(32, 142, 105); */
+    gap: 20px;
+}
+#text_content img{
+    max-width: 100%;
+}

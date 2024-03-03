@@ -1,0 +1,26 @@
+{% extends "base.html" %} {% block content %}
+{% load static %}
+
+<div class="cards">
+
+    <div class="text-center">
+      <h1 class="mt-5">Food Items</h1>
+    </div>
+    <div class="d-flex flex-wrap justify-content-center gap-4 p-4">
+
+        {% for category in categories %}
+        <div class="card" style="width: 18rem;">
+            <img src="{{ category.strCategoryThumb}}" class="card-img-top" alt="{{ category.strCategory }}">
+
+            <div class="card-body ">
+              <p><strong>{{ category.idCategory }}</strong></p>
+              <h5 class="card-title">{{ category.strCategory }}</h5>
+              <p class="card-text">{{ category.strCategoryDescription | truncatewords:10 }}</p>
+            </div>
+          </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+{% endblock content %}

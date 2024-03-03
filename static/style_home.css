@@ -1,0 +1,14 @@
+.homePage{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* background-color: red; */
+}
+.homePageText {
+    text-align: center;
+    font-size: large;
+}
+.homePage img {
+    width: 500px;
+    height: 350px;
+}
